@@ -6,7 +6,21 @@ const app = express();
 app.get("/", (req, res)=>{
     res.send("Welcome to Home page")
 })
-app.listen(port,(req, res)=>{
-    console.log(`Server started at port ${port}`);
+
+app.get("/product", (req, res)=>{
+ res.send("This is Product details")   
+})
+
+app.get("/contact",(req, res)=>{
+    res.send("Contact Me")
+})
+
+app.post("/signup", (req, res)=>{
+    res.send("Sign up")
+})
+
+
+app.listen(port,()=>{
+ console.log(`Server started at port ${port}`);
 
 })
