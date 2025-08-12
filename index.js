@@ -15,6 +15,10 @@ app.get("/contact",(req, res)=>{
     res.send("Contact Me")
 })
 
+app.get("/aboutus",(req, res)=>{
+    res.send("This is about us page")
+})
+
 app.post("/signup", (req, res)=>{
     res.send("Sign up")
 })
