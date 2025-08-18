@@ -1,3 +1,10 @@
+require("dotenv").config();
+console.log(process.env.username);
+console.log(process.env.database);
+console.log(process.env.password);
+
+
+
 const express = require("express")
 const port = 8000;
 
